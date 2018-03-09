@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.game {
+  border: 1px solid lightgray;
+  padding: 5px 15px;
+  margin: 5px auto;
+  width: 50%;
+}

@@ -4,19 +4,15 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
     <title>AnguarJS Practice</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body ng-controller="StoreController as store">
+    <h1>House Rules</h1>
 
-    <div class="form">
-      <label for="">Name: </label>
-      <input type="text" ng-model="yourName" placeholder="Enter your name here">
-      <hr>
-      <h1>Hello, {{yourName}}!</h1>
-    </div>
-    <div class="" ng-controller="StoreController as store">
-      <h1>{{store.product.name}}</h1>
-      <h2>{{store.product.type}}</h2>
-      <p>{{store.product.description}}</p>
+    <div class="game" ng-repeat="product in store.products">
+      <h2>Name: {{product.name}}</h2>
+      <h4>Type: {{product.type}}</h4>
+      <p>Description: {{product.description}}</p>
     </div>
     <script type="text/javascript" src="app.js"></script>
   </body>

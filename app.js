@@ -2,14 +2,21 @@
   var app = angular.module('store', []);
 
   app.controller('StoreController', function() {
-    this.product = game;
+    this.products = games;
 
   });
 
-  var game = {
-    name: "Scrabble",
-    type: "Board",
-    description: "Super nerdy word game that everyone loves"
-  }
+  var games = [
+    {
+      name: "Scrabble",
+      type: "Board",
+      description: "Super nerdy word game that everyone loves"
+    },
+    {
+      name: "Exploding Kittens",
+      type: "Card",
+      description: "Survive the Exploding Kitten onslaught!"
+    }
+  ];
 
 })();
