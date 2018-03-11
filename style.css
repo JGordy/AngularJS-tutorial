@@ -6,10 +6,30 @@ h1 {
   text-align: center;
 }
 
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .game {
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
+  border-radius: 5px;
   padding: 5px 15px;
-  margin: 5px auto;
-  width: 50%;
+  margin: 5px;
+  flex-basis: 40%;
+}
+
+.game h2 {
+  color: #05538b;
+}
+
+.game h4 {
+  color: rgba(100,100,100,0.7);
+  text-transform: capitalize;
+}
+
+.objective {
+  color: #ff533d;
+  margin-bottom: 1rem;
 }

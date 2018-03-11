@@ -9,10 +9,13 @@
   <body ng-controller="StoreController as store">
     <h1>Game Night</h1>
 
-    <div class="game" ng-repeat="game in games">
-      <h2>Name: {{game.title}}</h2>
-      <h4>Type: {{game.category}}</h4>
-      <p>Description: {{game.objective}}</p>
+    <div class="game-container">
+      <div class="game" ng-repeat="game in games">
+        <h2>{{game.title}}</h2>
+        <h4>{{game.category}}</h4>
+        <p class="objective">How to win:</p>
+        <p>{{game.objective}}</p>
+      </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
