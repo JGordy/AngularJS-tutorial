@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body ng-controller="StoreController as store">
-    <h1>House Rules</h1>
+    <h1>Game Night</h1>
 
-    <div class="game" ng-repeat="product in store.products">
-      <h2>Name: {{product.name}}</h2>
-      <h4>Type: {{product.type}}</h4>
-      <p>Description: {{product.description}}</p>
+    <div class="game" ng-repeat="game in games">
+      <h2>Name: {{game.title}}</h2>
+      <h4>Type: {{game.category}}</h4>
+      <p>Description: {{game.objective}}</p>
     </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
